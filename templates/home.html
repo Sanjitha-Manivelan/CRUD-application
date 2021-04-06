@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Welcome To the Puppy Adopt</h1>
+    {% if session['logged_in'] %}
+        <h1>{{ session['username'] }}</h1>
+    {% endif %}
+  </div>
+{% endblock %}
