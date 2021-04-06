@@ -1,15 +1,14 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block content %}
 {% from "includes/formhelpers.html" import render_field %}
 
-<h2>Signup</h2>
+<h2>SignUp</h2>
 <br>
 <form method="POST">
-    {{ render_field(form.username, class="form-control) }}
-    {{ render_field(form.email, class="form-control) }}
-    {{ render_field(form.password, class="form-control) }}
-    {{ render_field(form.confirm, class="form-control) }}
-    <button type="button" class="btn btn-outline-primary">Signup</button>
+    {{ render_field(form.username, class="form-control") }}
+    {{ render_field(form.email, class="form-control") }}
+    {{ render_field(form.password, class="form-control") }}
+    {{ render_field(form.confirm, class="form-control") }}
+    <button type="submit" class="btn btn-outline-primary">Signup</button>
 </form>
-
 {% endblock %}
